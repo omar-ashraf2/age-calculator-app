@@ -23,6 +23,6 @@ The users should be able to:
 
 ## Deploying your project
 
-- [Netlify](https://age-calc-app-javascript.netlify.app/)
+- [Live Demo ⬅️](https://age-calc-app-javascript.netlify.app/)
 
 
