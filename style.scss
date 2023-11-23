@@ -1,0 +1,115 @@
+@font-face {
+  font-family: Poppins-Bold;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+  font-weight: bold;
+}
+@font-face {
+  font-family: Poppins-BoldItalic;
+  src: url("./assets/fonts/Poppins-BoldItalic.ttf");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: Poppins-ExtraBold;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  font-weight: bolder;
+}
+@font-face {
+  font-family: Poppins-ExtraBoldItalic;
+  src: url("./assets/fonts/Poppins-ExtraBoldItalic.ttf");
+  font-weight: bolder;
+  font-style: italic;
+}
+@font-face {
+  font-family: Poppins-Regular;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+  font-weight: normal;
+}
+// Colors
+$purple: hsl(259, 100%, 65%);
+$light-red: hsl(0, 100%, 67%);
+$white: hsl(0, 0%, 100%);
+$off-white: hsl(0, 0%, 94%);
+$light-grey: hsl(0, 0%, 86%);
+$smokey-grey: hsl(0, 1%, 44%);
+$off-black: hsl(0, 0%, 8%);
+
+body {
+  font-family: Poppins-Regular, serif;
+  background-color: $off-white;
+}
+.container {
+  width: 800px;
+  border-radius: 15px 15px 100px 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 50px;
+  background-color: $white;
+  .top form {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid $light-grey;
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+    label {
+      font-size: 14px;
+      letter-spacing: 3px;
+      font-family: Poppins-Bold, serif;
+      color: $smokey-grey;
+    }
+    input {
+      font-size: 32px;
+      width: 150px;
+      border-radius: 8px;
+      padding: 8px 20px;
+      border: 1px solid $light-grey;
+      font-family: Poppins-Bold, serif;
+      &:focus {
+        outline: 1px solid $purple;
+      }
+    }
+    small {
+      color: red;
+    }
+    button {
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-image: url("./assets/images/icon-arrow.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      object-fit: cover;
+      bottom: -40px;
+      right: 0;
+      background-color: $purple;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s ease-out;
+      &:hover {
+        background-color: $off-black;
+      }
+    }
+  }
+  .bottom {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: -15px 0;
+      font-size: 90px;
+      font-family: Poppins-ExtraBoldItalic, serif;
+      span {
+        color: $purple;
+      }
+    }
+  }
+}
