@@ -113,3 +113,57 @@ body {
     }
   }
 }
+@media (max-width: 868px) {
+  .container {
+    width: 600px;
+    .bottom p {
+      font-size: 80px;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    width: 500px;
+    .top {
+      form {
+        input {
+          width: 120px;
+          font-size: 26px;
+        }
+        button {
+          width: 60px;
+          height: 60px;
+          background-size: 35px;
+          bottom: -30px;
+          right: 50%;
+          transform: translateX(50%);
+        }
+      }
+    }
+    .bottom p {
+      font-size: 60px;
+    }
+  }
+}
+@media (max-width: 545px) {
+  .container {
+    width: 400px;
+    .top {
+      form {
+        label {
+          font-size: 14px;
+        }
+        input {
+          width: 90px;
+          font-size: 18px;
+        }
+        small {
+          font-size: 12px;
+        }
+      }
+    }
+    .bottom p {
+      font-size: 50px;
+    }
+  }
+}
